@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "title": "JavaScript",
+    "price": "100",
+    "img": "https://itproger.com/img/courses/1476977754.jpg",
+    "id": "dcb69201-a1b9-4682-ae6b-2f892cfef2c8"
+  },
+  {
+    "title": "HTML",
+    "price": "65",
+    "img": "https://play-lh.googleusercontent.com/85WnuKkqDY4gf6tndeL4_Ng5vgRk7PTfmpI4vHMIosyq6XQ7ZGDXNtYG2s0b09kJMw",
+    "id": "34141246-2849-4e3d-baba-f40bdb63f8da"
+  }
+]
