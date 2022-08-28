@@ -7,4 +7,10 @@ router.get("/", (req, res) => {
   });
 });
 
+router.post("/", (req, res) => {
+  const course = new Course(req.body);
+  course.save();
+  res.redirect("/courses");
+});
+
 module.exports = router;

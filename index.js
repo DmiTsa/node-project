@@ -5,6 +5,8 @@ const exphbs = require("Express-handlebars"); // const { ExpressHandlebars } = r
 const homeRoutes = require("./routes/home");
 const coursesRoutes = require("./routes/courses");
 const addRoutes = require("./routes/add");
+//models
+const Course = require("./models/course");
 
 const hbs = exphbs.create({
   defaultLayout: "main",
@@ -18,6 +20,7 @@ app.set("views", "views"); //папка с файлами html по умолча
 app.use(express.static("public")); //папка со статическими файлами по умолчанию
 
 //---------------------Роуты (мепинги) страниц----------------
+app.use(express.urlencoded({ extended: true }));
 app.use("/", homeRoutes);
 app.use("/courses", coursesRoutes);
 app.use("/add", addRoutes);

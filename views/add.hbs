@@ -4,22 +4,51 @@
     <input
       placeholder="Название курса"
       id="title"
+      name="title"
       type="text"
       class="validate"
+      required
     />
-    {{! <label for="title">Название курса</label> }}
-  </div>
-  <div class="input-field">
-    <input placeholder="Цена курса" id="Price" type="number" class="validate" />
+    <span
+      class="helper-text"
+      data-error="Введите название курса"
+      data-success="OK"
+    >Название курса</span>
+
     {{! <label for="title">Название курса</label> }}
   </div>
   <div class="input-field">
     <input
-      placeholder="Название курса"
-      id="title"
-      type="text"
+      placeholder="Цена курса"
+      id="Price"
+      name="price"
+      type="number"
       class="validate"
+      required
     />
     {{! <label for="title">Название курса</label> }}
+    <span
+      class="helper-text"
+      data-error="Введите целое число"
+      data-success="OK"
+    >Цена курса $</span>
   </div>
+  <div class="input-field">
+    <input
+      {{! placeholder="Название курса" }}
+      id="img"
+      name="img"
+      type="text"
+      class="validate"
+      required
+    />
+    <span
+      class="helper-text"
+      data-error="Введите URL картинки"
+      data-success="OK"
+    >URL картинки</span>
+    {{! <label for="img">Название картинки</label> }}
+
+  </div>
+  <button class="btn btb-primary">Добавить курс</button>
 </form>
