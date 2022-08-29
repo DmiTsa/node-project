@@ -45,5 +45,10 @@ class Course {
       );
     });
   }
+
+  static async getById(id) {
+    const courses = await this.getAll();
+    return courses.find((el) => el.id === id);
+  }
 }
 module.exports = Course;

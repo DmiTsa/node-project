@@ -23,6 +23,7 @@ app.use(express.static("public")); //папка со статическими ф
 app.use(express.urlencoded({ extended: true }));
 app.use("/", homeRoutes);
 app.use("/courses", coursesRoutes);
+app.use("/courses/", coursesRoutes);
 app.use("/add", addRoutes);
 
 app.get("/courses", (req, res) => {
