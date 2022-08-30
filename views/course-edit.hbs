@@ -1,0 +1,51 @@
+<h1>Редактировать {{course.title}}</h1>
+<form action="/add/edit" method="post">
+  <div class="input-field">
+    <input
+      placeholder="Название курса"
+      id="title"
+      name="title"
+      type="text"
+      class="validate"
+      required
+      value="{{course.title}}"
+    />
+    <span
+      class="helper-text"
+      data-error="Введите название курса"
+      data-success="OK"
+    >Название курса</span>
+  </div>
+  <div class="input-field">
+    <input
+      placeholder="Цена курса"
+      id="Price"
+      name="price"
+      type="number"
+      class="validate"
+      required
+      value="{{course.price}}"
+    />
+    <span
+      class="helper-text"
+      data-error="Введите целое число"
+      data-success="OK"
+    >Цена курса $</span>
+  </div>
+  <div class="input-field">
+    <input
+      id="img"
+      name="img"
+      type="text"
+      class="validate"
+      required
+      value="course.img"
+    />
+    <span
+      class="helper-text"
+      data-error="Введите URL картинки"
+      data-success="OK"
+    >URL картинки</span>
+  </div>
+  <button class="btn btb-primary">Применить изменения</button>
+</form>
